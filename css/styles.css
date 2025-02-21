@@ -1,0 +1,315 @@
+/* Author: ZoieAnn Baird
+ * Date: 2/11/2025
+ * File Name: styles.css
+ */
+/* CSS Reset*/
+Body,
+header,
+nav,
+main,
+footer,
+h1,
+div img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* General Style Rules */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+/* Style rules for Header section */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Style rules for nav section */
+nav {
+    background-color: #d98383;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4ce73;
+}
+
+/* Style rules for home and Main Content */
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+#mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bookshelf {
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.welcome {
+    max-width: 500px;
+    text-align: center;
+}
+
+.Explore a {
+    display: inline-block;
+    background-color: #d98383;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Explore a:hover {
+    background-color: rgba(231, 131, 60, 0.63);
+}
+
+/* Style rules for Portfolio Section */
+#portfolio {
+    margin-top: 50px;
+}
+
+#portfolio img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#portfolio img:hover {
+    transform: scale(1.05);
+}
+
+#Art {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+#Art img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#Art img:hover {
+    transform: scale(1.05);
+}
+
+
+/* style rules for About Page */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portrait {
+    width: 300px;
+    border-radius: 10px;
+    padding: 3%
+}
+
+.about {
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #222;
+}
+
+h3 {
+    font-size: 24px;
+    color: #444;
+}
+
+
+/* Style rules for Commissions Section */
+#commissions div {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#commissions h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #222;
+}
+
+#commissions h2 {
+    font-size: 26px;
+    color: #444;
+}
+
+#commissions p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+#commissions a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d98383;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#commissions a:hover {
+    background-color: rgba(231, 131, 60, 0.63);
+}
+
+/* Style Rules for Contact Page*/
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacts {
+    padding: 8%
+}
+
+.accent {
+    color: #d98383
+}
+
+#contact p {
+    font-style: italic;
+    padding: 2%
+}
+
+#contact a {
+    color: #555;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #d98383
+}
+
+.map {
+    margin: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Style rules for Resume*/
+#resume {
+    background-color: white;
+    padding: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 4%;
+}
+
+#resume h3 {
+    text-align: center;
+}
+
+#resume dt {
+    padding: 3% 4% 1%;
+    font-weight: bold;
+    color: #555;
+}
+
+#education p {
+    padding-left: 4%
+}
+
+#softwares ul {
+    padding-left: 5%
+}
+
+#skills ul {
+    padding-left: 5%
+}
+
+/* Style rules for Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d98383;
+    color: white;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
