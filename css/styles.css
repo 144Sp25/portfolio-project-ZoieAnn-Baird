@@ -15,9 +15,20 @@ div img {
     border: 0;
 }
 
+/*Mobile Viewport*/
+
+/*Show Mobile, hide Tab-desk*/
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+
 /* General Style Rules */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -26,6 +37,9 @@ body {
 
 /* Style rules for Header section */
 header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     text-align: center;
     padding: 20px;
     background-color: #f5f5f5;
@@ -34,6 +48,8 @@ header {
 .logo {
     width: 150px;
     border-radius: 50%;
+
+
 }
 
 /* Style rules for nav section */
@@ -49,71 +65,47 @@ nav ul {
     margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav li {
+    padding: 0.5em 1em;
+    display: block;
+    border-top: 1px solid #fff;
+    font-family: "Playfair Display", serif;
 }
 
-nav ul li a {
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     transition: color 0.3s ease;
+    padding: 0.5em 1em;
 }
 
-nav ul li a:hover {
-    color: #f4ce73;
-}
+
 
 /* Style rules for home and Main Content */
 main {
-    padding: 50px;
+    padding: 3px;
     text-align: center;
+    font-family: "Playfair Display", serif;
 }
 
-#mission {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.bookshelf {
-    width: 300px;
-    margin-right: 20px;
-    border-radius: 10px;
-}
-
-.welcome {
-    max-width: 500px;
-    text-align: center;
-}
-
-.Explore a {
-    display: inline-block;
-    background-color: #d98383;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.Explore a:hover {
-    background-color: rgba(231, 131, 60, 0.63);
-}
 
 /* Style rules for Portfolio Section */
+
+.mobile h2 {
+    font-size: 2em
+}
+
 #portfolio {
-    margin-top: 50px;
+    margin-top: 31px;
 }
 
 #portfolio img {
-    width: 200px;
+    width: 300px;
     height: auto;
     margin: 10px;
     border-radius: 5px;
@@ -121,12 +113,10 @@ main {
     transition: transform 0.3s ease;
 }
 
-#portfolio img:hover {
-    transform: scale(1.05);
-}
+
 
 #Art {
-    display: grid;
+    display: inline-block;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
     justify-content: center;
@@ -144,9 +134,7 @@ main {
     transition: transform 0.3s ease;
 }
 
-#Art img:hover {
-    transform: scale(1.05);
-}
+
 
 
 /* style rules for About Page */
@@ -158,12 +146,6 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.portrait {
-    width: 300px;
-    border-radius: 10px;
-    padding: 3%
 }
 
 .about {
@@ -221,9 +203,7 @@ h3 {
     transition: background 0.3s;
 }
 
-#commissions a:hover {
-    background-color: rgba(231, 131, 60, 0.63);
-}
+
 
 /* Style Rules for Contact Page*/
 
@@ -246,7 +226,6 @@ h3 {
 }
 
 #contact p {
-    font-style: italic;
     padding: 2%
 }
 
@@ -255,13 +234,12 @@ h3 {
     text-decoration: none;
 }
 
-#contact a:hover {
-    text-decoration: underline;
-    color: #d98383
-}
+
 
 .map {
-    margin: 5%;
+    padding-top: 5%;
+    width: 95%;
+    height: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -303,6 +281,7 @@ footer {
     background-color: #d98383;
     color: white;
     margin-top: 50px;
+    font-family: "Playfair Display", serif;
 }
 
 footer a {
@@ -310,6 +289,73 @@ footer a {
     text-decoration: none;
 }
 
+
+
+/* 
+nav ul li a:hover {
+    color: #f4ce73;
+}
+
+#mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#bookshelf {
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.welcome {
+    max-width: 500px;
+    text-align: center;
+}
+
+.Explore a {
+    display: inline-block;
+    background-color: #d98383;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Explore a:hover {
+    background-color: rgba(231, 131, 60, 0.63);
+}
+
+#portfolio img:hover {
+    transform: scale(1.05);
+}
+
+#Art img:hover {
+    transform: scale(1.05);
+}
+
+#portrait {
+    width: 300px;
+    border-radius: 10px;
+    padding: 3%
+}
+
+#commissions a:hover {
+    background-color: rgba(231, 131, 60, 0.63);
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #d98383
+}
+
 footer a:hover {
     text-decoration: underline;
 }
+*/
