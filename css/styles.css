@@ -289,73 +289,122 @@ footer a {
     text-decoration: none;
 }
 
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px),
+print {
 
+    /* Tablet viewport: show tablet tablet desktop class, hide mobile class*/
+    .tab-desk {
+        display: block;
+    }
 
-/* 
-nav ul li a:hover {
-    color: #f4ce73;
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet viewport style rules for header*/
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /* Tablet viewport style rules for Nav area*/
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em;
+        font-size: 21px;
+    }
+
+    /* Tablet viewport style rules for main area*/
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+
+    #mission {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #bookshelf {
+        width: 300px;
+        margin-right: 20px;
+        border-radius: 10px;
+    }
+
+    .welcome {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .Explore a {
+        display: inline-block;
+        background-color: #d98383;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    #Art img {
+        width: 39%;
+    }
+
+    #portrait {
+        width: 300px;
+        border-radius: 10px;
+        padding: 3%
+    }
+
 }
 
-#mission {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 1015px),
+print {
 
-#bookshelf {
-    width: 300px;
-    margin-right: 20px;
-    border-radius: 10px;
-}
+    nav ul li a:hover {
+        color: #f4ce73;
+    }
 
-.welcome {
-    max-width: 500px;
-    text-align: center;
-}
 
-.Explore a {
-    display: inline-block;
-    background-color: #d98383;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
+    .Explore a:hover {
+        background-color: rgba(231, 131, 60, 0.63);
+    }
 
-.Explore a:hover {
-    background-color: rgba(231, 131, 60, 0.63);
-}
+    #portfolio img:hover {
+        transform: scale(1.05);
+    }
 
-#portfolio img:hover {
-    transform: scale(1.05);
-}
+    #Art img:hover {
+        transform: scale(1.05);
+    }
 
-#Art img:hover {
-    transform: scale(1.05);
-}
 
-#portrait {
-    width: 300px;
-    border-radius: 10px;
-    padding: 3%
-}
+    #commissions a:hover {
+        background-color: rgba(231, 131, 60, 0.63);
+    }
 
-#commissions a:hover {
-    background-color: rgba(231, 131, 60, 0.63);
-}
+    #contact a:hover {
+        text-decoration: underline;
+        color: #d98383
+    }
 
-#contact a:hover {
-    text-decoration: underline;
-    color: #d98383
+    footer a:hover {
+        text-decoration: underline
+    }
 }
-
-footer a:hover {
-    text-decoration: underline;
-}
-*/
