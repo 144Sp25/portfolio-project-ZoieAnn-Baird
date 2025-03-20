@@ -293,7 +293,7 @@ footer a {
 }
 
 /*Media Query for Tablet Viewport*/
-@media screen and (min-width: 630px),
+@media screen and (min-width: 668px),
 print {
 
     /* Tablet viewport: show tablet tablet desktop class, hide mobile class*/
